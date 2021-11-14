@@ -12,6 +12,8 @@ public class Official implements Serializable {
     @JoinColumn(name = "username")
     private UserApp username;
 
+    //pruebaaaaaaaaaaa
+
     @Column(name = "name", nullable = false)
     private String name;
 
