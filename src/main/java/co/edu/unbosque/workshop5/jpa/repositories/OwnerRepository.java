@@ -11,8 +11,6 @@ public interface OwnerRepository {
 
     List<Owner> findAll();
 
-    Optional<Owner> updateAll(String name, String address,String neighborhood, String username);
-
     Optional<Owner> updateName(String name, String username);
 
     Optional<Owner> updateAddress(String address, String username);

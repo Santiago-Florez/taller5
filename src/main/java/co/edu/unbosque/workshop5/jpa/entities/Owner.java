@@ -30,6 +30,12 @@ public class Owner implements Serializable {
     @OneToMany(mappedBy = "owner", fetch = FetchType.LAZY , cascade = CascadeType.ALL)
     private List<Pet> pets = new ArrayList<>();
 
+    public Owner(String name, String address, String neighborhood) {
+        this.name = name;
+        this.address = address;
+        this.neighborhood = neighborhood;
+    }
+
     public UserApp getUsername() {
         return username;
     }

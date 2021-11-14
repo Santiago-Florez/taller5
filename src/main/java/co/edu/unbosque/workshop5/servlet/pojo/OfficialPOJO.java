@@ -4,6 +4,8 @@ public class OfficialPOJO {
 
     private String name;
 
+    public OfficialPOJO(){}
+
     public OfficialPOJO(String name) {
         this.name = name;
     }

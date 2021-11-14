@@ -25,14 +25,6 @@ public class OwnerImpl implements OwnerRepository{
     }
 
     @Override
-    public Optional<Owner> updateAll(String name, String address, String neighborhood, String username) {
-        Owner ow = (Owner) entityManager.createQuery("UPDATE Owner ow SET ow.name = :name, ow.address = :address " +
-                ", ow.neighborhood = :neighborhood WHERE ow.username = :username").setParameter("name",name)
-                .setParameter("address",address).setParameter("neighborhood", neighborhood).getSingleResult();
-        return ow != null ? Optional.of(ow) : Optional.empty();
-    }
-
-    @Override
     public Optional<Owner> updateName(String name, String username) {
         Owner ow = (Owner) entityManager.createQuery("UPDATE Owner ow SET ow.name = :name WHERE ow.username = :username")
                 .setParameter("name",name).getSingleResult();

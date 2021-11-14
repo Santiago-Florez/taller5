@@ -1,5 +1,6 @@
 package co.edu.unbosque.workshop5.jpa.repositories;
 
+import co.edu.unbosque.workshop5.jpa.entities.Owner;
 import co.edu.unbosque.workshop5.jpa.entities.Vet;
 
 import javax.persistence.EntityManager;
@@ -30,5 +31,26 @@ public class VetImpl implements VetRepository{
     @Override
     public List<Vet> findAll() {
         return entityManager.createQuery("from Vet ").getResultList();
+    }
+
+    @Override
+    public Optional<Vet> updateName(String name, String username) {
+        Vet vet = (Vet) entityManager.createQuery("UPDATE Vet vet SET vet.name = :name WHERE vet.username = :username")
+                .setParameter("name",name).getSingleResult();
+        return vet != null ? Optional.of(vet) : Optional.empty();
+    }
+
+    @Override
+    public Optional<Vet> updateAddress(String address, String username) {
+        Vet vet = (Vet) entityManager.createQuery("UPDATE Vet vet SET vet.address = :address WHERE vet.username = :username")
+                .setParameter("address",address).getSingleResult();
+        return vet != null ? Optional.of(vet) : Optional.empty();
+    }
+
+    @Override
+    public Optional<Vet> updateNeighborhood(String neighborhood, String username) {
+        Vet vet = (Vet) entityManager.createQuery("UPDATE Vet vet SET vet.neighborhood = :neighborhood WHERE vet.username = :username")
+                .setParameter("neighborhood", neighborhood).getSingleResult();
+        return vet != null ? Optional.of(vet) : Optional.empty();
     }
 }

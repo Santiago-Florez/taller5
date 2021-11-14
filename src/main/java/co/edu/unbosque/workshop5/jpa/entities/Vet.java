@@ -26,6 +26,14 @@ public class Vet implements Serializable {
     @OneToMany(mappedBy = "vetId", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Visit> visit = new ArrayList<>();
 
+    public Vet(){}
+
+    public Vet(String name, String address, String neighborhood) {
+        this.name = name;
+        this.address = address;
+        this.neighborhood = neighborhood;
+    }
+
     public UserApp getUsername() {
         return username;
     }
