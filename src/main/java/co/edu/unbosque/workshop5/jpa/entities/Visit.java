@@ -41,6 +41,11 @@ public class Visit implements Serializable {
     public Visit() {
     }
 
+    public Visit(String created_at, String type, String description) {
+        this.created_at = created_at;
+        this.type = type;
+        this.description = description;
+    }
 
     public Integer getVistId() {
         return vistId;

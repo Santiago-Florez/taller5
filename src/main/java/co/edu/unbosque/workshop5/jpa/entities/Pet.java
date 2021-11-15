@@ -55,6 +55,10 @@ public class Pet implements Serializable {
         this.picture = picture;
     }
 
+    public Pet() {
+
+    }
+
     public Integer getPetId() {
         return petId;
     }

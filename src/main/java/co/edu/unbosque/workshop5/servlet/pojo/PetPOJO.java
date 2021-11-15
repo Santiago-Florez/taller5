@@ -2,6 +2,7 @@ package co.edu.unbosque.workshop5.servlet.pojo;
 
 public class PetPOJO {
 
+    private Integer petId;
     private String microchip;
     private String name;
     private String species;
@@ -9,6 +10,7 @@ public class PetPOJO {
     private String size;
     private String sex;
     private String picture;
+    private Integer ownerId;
 
     public PetPOJO(){}
 
@@ -20,6 +22,43 @@ public class PetPOJO {
         this.size = size;
         this.sex = sex;
         this.picture = picture;
+    }
+
+    public PetPOJO(String name, String species, String race, String size, String sex, String picture) {
+        this.name = name;
+        this.species = species;
+        this.race = race;
+        this.size = size;
+        this.sex = sex;
+        this.picture = picture;
+    }
+
+    public PetPOJO(Integer petId, String microchip, String name, String species, String race, String size, String sex, String picture, Integer ownerId) {
+        this.petId = petId;
+        this.microchip = microchip;
+        this.name = name;
+        this.species = species;
+        this.race = race;
+        this.size = size;
+        this.sex = sex;
+        this.picture = picture;
+        this.ownerId = ownerId;
+    }
+
+    public Integer getPetId() {
+        return petId;
+    }
+
+    public void setPetId(Integer petId) {
+        this.petId = petId;
+    }
+
+    public Integer getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(Integer ownerId) {
+        this.ownerId = ownerId;
     }
 
     public String getMicrochip() {

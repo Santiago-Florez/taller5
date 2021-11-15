@@ -45,7 +45,7 @@ public class PetService {
 
         List<PetPOJO> petPOJOS = new ArrayList<>();
         for (Pet pet : getPets){
-            petPOJOS.add(new PetPOJO(pet.getMicroChip(), pet.getName(), pet.getSpecies(), pet.getRace(), pet.getSize(), pet.getSex(), pet.getPicture()));
+            petPOJOS.add(new PetPOJO(pet.getPetId(),pet.getMicroChip(), pet.getName(), pet.getSpecies(), pet.getRace(), pet.getSize(), pet.getSex(), pet.getPicture(), pet.getOwner().getPerson_id()));
         }
 
         return petPOJOS;

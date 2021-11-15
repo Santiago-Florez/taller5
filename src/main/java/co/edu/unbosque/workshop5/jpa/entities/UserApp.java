@@ -19,14 +19,21 @@ public class UserApp {
     @Column(name = "role")
     private String role;
 
-    @OneToOne(mappedBy = "username")
+    @OneToOne(mappedBy = "username", cascade = CascadeType.ALL)
     private Official official;
 
-    @OneToOne(mappedBy = "username")
+    @OneToOne(mappedBy = "username", cascade = CascadeType.ALL)
     private Owner owner;
 
-    @OneToOne(mappedBy = "username")
+    @OneToOne(mappedBy = "username", cascade = CascadeType.ALL)
     private Vet vet;
+
+    @PreUpdate
+    private void onUpdate(){
+        owner=null;
+        official=null;
+        vet=null;
+    }
 
     public UserApp(String username, String password, String email, String role) {
         this.username = username;
@@ -38,6 +45,8 @@ public class UserApp {
     public UserApp() {
 
     }
+
+
 
     public String getUsername() {
         return username;

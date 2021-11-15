@@ -17,7 +17,7 @@ public class OfficialService {
 
     OfficialRepository officialRepository;
 
-    public OfficialPOJO create(String name){
+    public OfficialPOJO create(String username, String name){
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("workshop5");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
@@ -67,7 +67,7 @@ public class OfficialService {
 
         List<OfficialPOJO> officialPOJOS = new ArrayList<>();
         for (Official official: getofficials){
-            officialPOJOS.add(new OfficialPOJO(official.getName()));
+            officialPOJOS.add(new OfficialPOJO(official.getUsername().getUsername(), official.getName()));
         }
 
         return officialPOJOS;

@@ -14,17 +14,17 @@ public class Owner implements Serializable {
     @JoinColumn(name = "username" )
     private UserApp username;
 
-    @GeneratedValue
-    @Column(name = "person_id", unique = true)
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "person_id", unique = true, nullable = false)
     private Integer person_id;
 
-    @Column(name = "name", nullable = false)
+    @Column(name = "name")
     private String name;
 
-    @Column(name = "address", nullable = false)
+    @Column(name = "address")
     private String address;
 
-    @Column(name = "neighborhood", nullable = false)
+    @Column(name = "neighborhood")
     private String neighborhood;
 
     @OneToMany(mappedBy = "owner", fetch = FetchType.LAZY , cascade = CascadeType.ALL)
@@ -38,7 +38,10 @@ public class Owner implements Serializable {
 
     public Owner() {
     }
-
+    @PreUpdate
+    private void onUpdate(){
+        pets=null;
+    }
     public UserApp getUsername() {
         return username;
     }
@@ -86,4 +89,6 @@ public class Owner implements Serializable {
     public void setPets(List<Pet> pets) {
         this.pets = pets;
     }
+
+
 }

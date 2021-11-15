@@ -2,6 +2,7 @@ package co.edu.unbosque.workshop5.servlet.pojo;
 
 public class VetPOJO {
 
+    private String username;
     private String name;
     private String address;
     private String neighborhood;
@@ -11,6 +12,21 @@ public class VetPOJO {
         this.name = name;
         this.address = address;
         this.neighborhood = neighborhood;
+    }
+
+    public VetPOJO(String username, String name, String address, String neighborhood) {
+        this.username = username;
+        this.name = name;
+        this.address = address;
+        this.neighborhood = neighborhood;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getName() {

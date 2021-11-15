@@ -5,17 +5,25 @@ public class VisitPOJO {
     private Integer visitId;
     private String createdAt;
     private String type;
-    private Integer vetId;
+    private String description;
+    private String vetId;
     private Integer petId;
 
     public VisitPOJO(){}
 
-    public VisitPOJO(Integer visitId, String createdAt, String type, Integer vetId, Integer petId) {
+    public VisitPOJO(Integer visitId, String createdAt, String type,String description, String vetId, Integer petId) {
         this.visitId = visitId;
         this.createdAt = createdAt;
         this.type = type;
+        this.description = description;
         this.vetId = vetId;
         this.petId = petId;
+    }
+
+    public VisitPOJO(String createdAt, String type, String description) {
+        this.createdAt = createdAt;
+        this.type = type;
+        this.description = description;
     }
 
     public Integer getVisitId() {
@@ -42,11 +50,11 @@ public class VisitPOJO {
         this.type = type;
     }
 
-    public Integer getVetId() {
+    public String getVetId() {
         return vetId;
     }
 
-    public void setVetId(Integer vetId) {
+    public void setVetId(String vetId) {
         this.vetId = vetId;
     }
 

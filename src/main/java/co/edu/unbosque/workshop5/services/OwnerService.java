@@ -17,7 +17,7 @@ public class OwnerService {
 
     OwnerRepository ownerRepository;
 
-    public OwnerPOJO save(String name, String address, String neighborhood){
+    public OwnerPOJO save(String userName, String name, String address, String neighborhood){
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("workshop5");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
@@ -45,7 +45,7 @@ public class OwnerService {
 
         List<OwnerPOJO> ownerPOJOS = new ArrayList<>();
         for (Owner owner: getOwners){
-            ownerPOJOS.add(new OwnerPOJO(owner.getName(), owner.getAddress(), owner.getNeighborhood()));
+            ownerPOJOS.add(new OwnerPOJO(owner.getUsername().getUsername(), owner.getName(), owner.getAddress(), owner.getNeighborhood()));
         }
 
         return ownerPOJOS;

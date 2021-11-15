@@ -38,4 +38,10 @@ public class UserAppImpl implements UserAppRepository{
                 .setParameter("email", email).setParameter("username", username).getSingleResult();
         return user != null ? Optional.of(user) : Optional.empty();
     }
+
+    @Override
+    public Optional<UserApp> findByUsername(String username) {
+        UserApp userApp = entityManager.find(UserApp.class,username);
+        return userApp!=null ? Optional.of(userApp) : Optional.empty();
+    }
 }

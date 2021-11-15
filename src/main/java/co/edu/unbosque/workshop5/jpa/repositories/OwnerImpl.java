@@ -44,4 +44,10 @@ public class OwnerImpl implements OwnerRepository{
                 .setParameter("neighborhood", neighborhood).getSingleResult();
         return ow != null ? Optional.of(ow) : Optional.empty();
     }
+
+    @Override
+    public Optional<Owner> findByName(String name) {
+        Owner owner = entityManager.find(Owner.class,name);
+        return owner!=null ? Optional.of(owner) : Optional.empty();
+    }
 }

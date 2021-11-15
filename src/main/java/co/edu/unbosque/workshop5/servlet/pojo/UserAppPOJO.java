@@ -1,5 +1,9 @@
 package co.edu.unbosque.workshop5.servlet.pojo;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class UserAppPOJO {
 
     private String userName;
@@ -98,4 +102,6 @@ public class UserAppPOJO {
     public void setUsernameVet(VetPOJO usernameVet) {
         this.usernameVet = usernameVet;
     }
+
+
 }

@@ -29,7 +29,7 @@ public class PetCaseService {
             entityManager.close();
             entityManagerFactory.close();
 
-            PetCasePOJO petCasePOJO = new PetCasePOJO(caseId,createdAt,type,description, petId);
+            PetCasePOJO petCasePOJO = new PetCasePOJO(createdAt,type,description);
 
             return petCasePOJO;
         }else{
