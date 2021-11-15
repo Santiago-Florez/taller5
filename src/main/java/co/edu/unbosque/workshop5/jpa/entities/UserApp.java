@@ -35,6 +35,10 @@ public class UserApp {
         this.role = role;
     }
 
+    public UserApp() {
+
+    }
+
     public String getUsername() {
         return username;
     }

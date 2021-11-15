@@ -7,6 +7,7 @@ public class OwnerPOJO {
     private String neighborhood;
 
     public OwnerPOJO(){}
+
     public OwnerPOJO(String name, String address, String neighborhood) {
         this.name = name;
         this.address = address;

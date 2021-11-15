@@ -1,6 +1,6 @@
 package co.edu.unbosque.workshop5.jpa.repositories;
 
-import co.edu.unbosque.workshop5.jpa.entities.Pet;
+import co.edu.unbosque.workshop5.jpa.entities.PetCase;
 
 import javax.persistence.EntityManager;
 import java.util.List;
@@ -10,8 +10,12 @@ public class PetCaseImpl implements PetCaseRepository{
 
     private EntityManager entityManager;
 
+    public PetCaseImpl(EntityManager entityManager) {
+        this.entityManager = entityManager;
+    }
+
     @Override
-    public Optional<Pet> saveType(Pet pet) {
+    public Optional<PetCase> saveType(PetCase pet) {
         try{
             entityManager.getTransaction().begin();
             entityManager.persist(pet);
@@ -25,7 +29,7 @@ public class PetCaseImpl implements PetCaseRepository{
     }
 
     @Override
-    public List<Pet> findAll() {
+    public List<PetCase> findAll() {
         return entityManager.createQuery("from PetCase ").getResultList();
     }
 }

@@ -45,6 +45,16 @@ public class Pet implements Serializable {
     @OneToMany(mappedBy = "petId", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<PetCase> petCase = new ArrayList<>();
 
+    public Pet(String microChip, String name, String species, String race, String size, String sex, String picture) {
+        this.microChip = microChip;
+        this.name = name;
+        this.species = species;
+        this.race = race;
+        this.size = size;
+        this.sex = sex;
+        this.picture = picture;
+    }
+
     public Integer getPetId() {
         return petId;
     }

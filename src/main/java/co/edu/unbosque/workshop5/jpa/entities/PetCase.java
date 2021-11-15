@@ -24,6 +24,16 @@ public class PetCase implements Serializable {
     @JoinColumn(name = "pet_id")
     private Pet petId;
 
+    public PetCase(String created_at, String type, String description) {
+        this.created_at = created_at;
+        this.type = type;
+        this.description = description;
+    }
+
+    public PetCase() {
+
+    }
+
     public Integer getCaseId() {
         return caseId;
     }

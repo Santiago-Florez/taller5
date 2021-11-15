@@ -29,6 +29,19 @@ public class Visit implements Serializable {
     @JoinColumn(name = "pet_id")
     private Pet petId;
 
+    public Visit(Integer vistId, String created_at, String type, String description, Vet vetId, Pet petId) {
+        this.vistId = vistId;
+        this.created_at = created_at;
+        this.type = type;
+        this.description = description;
+        this.vetId = vetId;
+        this.petId = petId;
+    }
+
+    public Visit() {
+    }
+
+
     public Integer getVistId() {
         return vistId;
     }

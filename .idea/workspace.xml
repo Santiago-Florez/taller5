@@ -12,18 +12,20 @@
     <list default="true" id="5b0a0f1b-1e7e-41f0-bbb0-5f2dd86aae8c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/entities/Owner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/entities/Owner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/entities/Vet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/entities/Vet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/repositories/OwnerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/repositories/OwnerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/repositories/OwnerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/repositories/OwnerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/repositories/VetImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/repositories/VetImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/repositories/VetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/repositories/VetRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/services/OfficialService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/services/OfficialService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/services/OwnerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/services/OwnerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/services/VetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/services/VetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/servlet/pojo/OfficialPOJO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/servlet/pojo/OfficialPOJO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/entities/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/entities/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/entities/PetCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/entities/PetCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/entities/UserApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/entities/UserApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/entities/Visit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/entities/Visit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/repositories/PetCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/repositories/PetCaseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/repositories/PetCaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/repositories/PetCaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/repositories/PetImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/jpa/repositories/PetImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/services/PetCaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/services/PetCaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/services/PetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/services/PetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/services/VisitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/services/VisitService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/servlet/pojo/OwnerPOJO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/servlet/pojo/OwnerPOJO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/servlet/pojo/PetCasePOJO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/servlet/pojo/PetCasePOJO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/servlet/pojo/PetPOJO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/servlet/pojo/PetPOJO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/servlet/pojo/VetPOJO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/servlet/pojo/VetPOJO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/servlet/pojo/VisitPOJO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/workshop5/servlet/pojo/VisitPOJO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +179,7 @@
       <workItem from="1636733262105" duration="6706000" />
       <workItem from="1636844260935" duration="13285000" />
       <workItem from="1636901063714" duration="7536000" />
-      <workItem from="1636920089091" duration="4919000" />
+      <workItem from="1636920089091" duration="19107000" />
     </task>
     <servers />
   </component>

@@ -1,13 +1,14 @@
 package co.edu.unbosque.workshop5.jpa.repositories;
 
 import co.edu.unbosque.workshop5.jpa.entities.Pet;
+import co.edu.unbosque.workshop5.jpa.entities.PetCase;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface PetCaseRepository {
 
-    Optional<Pet> saveType(Pet pet);
+    Optional<PetCase> saveType(PetCase pet);
 
-    List<Pet> findAll();
+    List<PetCase> findAll();
 }

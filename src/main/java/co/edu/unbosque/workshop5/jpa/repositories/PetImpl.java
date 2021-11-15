@@ -11,6 +11,10 @@ public class PetImpl implements PetRepository{
 
     private EntityManager entityManager;
 
+    public PetImpl(EntityManager entityManager) {
+        this.entityManager = entityManager;
+    }
+
     @Override
     public Optional<Pet> save(Pet pet) {
         return Optional.empty();
